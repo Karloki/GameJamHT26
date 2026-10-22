@@ -110,6 +110,8 @@ MonoBehaviour:
   maxHealth: 100
   moveSpeed: 5
   ContactDamage: 10
+  enemyManager: {fileID: 0}
+  xppickup: {fileID: 8200947225599760994, guid: d6946361f801a6140b4f7890b20598b0, type: 3}
 --- !u!61 &3162799371801260915
 BoxCollider2D:
   m_ObjectHideFlags: 0
