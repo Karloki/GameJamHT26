@@ -8,6 +8,7 @@ public class WalkerEnemy : BaseEnemy
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        base.Start();
         target = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Transform>();
         transform = GetComponent<Transform>();
     }
