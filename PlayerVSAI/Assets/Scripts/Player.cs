@@ -40,4 +40,9 @@ public class Player : MonoBehaviour
 
     }
 
+    public void IncreaseMoveSpeed(float percent)
+    {
+        moveSpeed *= 1f + percent;
+    }
+
 }
