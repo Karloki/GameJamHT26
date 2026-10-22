@@ -18,12 +18,12 @@ public class WaterBullet : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, moveSpeed * Time.deltaTime);
     }
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         print("hit");
         if (other.gameObject.CompareTag("Enemy")){
             other.gameObject.GetComponent<BaseEnemy>().TakeDamage(damage);
-            Destroy(this);
+            Destroy(gameObject);
 
         }
     }

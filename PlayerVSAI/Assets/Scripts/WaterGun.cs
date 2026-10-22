@@ -23,11 +23,13 @@ public class WaterGun : MonoBehaviour
     {
         if (target == null)
         {
+            if (enemyManager.FindClosestEnemy() != null);
             target = enemyManager.FindClosestEnemy();
             return;
         }
         WaterBullet bullet = Instantiate(waterBullet, transform);
         bullet.target = target;
+        bullet.transform.SetParent(null);
     }
 
     private IEnumerator WaitAndShoot(float waitTime)

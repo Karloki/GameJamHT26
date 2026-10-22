@@ -6,7 +6,7 @@ public class BaseEnemy : MonoBehaviour
     [SerializeField] protected int maxHealth = 100;
     [SerializeField] protected float moveSpeed = 5f;
     [SerializeField] protected int ContactDamage = 10;
-    [SerializeField] protected EnemyManager enemyManager;
+    public EnemyManager enemyManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected void Start()
     {
