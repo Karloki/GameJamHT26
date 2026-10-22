@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
     private const int NUMBER_OF_ABILITIES_IN_GAME = 1;
 
     private int health;
+    private int XP;
     [SerializeField] private float moveSpeed = 5f;
     private Ability[] unlockedAbilities = new Ability[NUMBER_OF_ABILITIES_IN_GAME];
     private Transform transform;
@@ -40,4 +41,8 @@ public class Player : MonoBehaviour
 
     }
 
+    public void addXP()
+    {
+        XP += 1;
+    }
 }
