@@ -108,8 +108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WalkerEnemy
   maxHealth: 100
-  moveSpeed: 5
+  moveSpeed: 2
   ContactDamage: 10
+  enemyManager: {fileID: 0}
 --- !u!61 &3162799371801260915
 BoxCollider2D:
   m_ObjectHideFlags: 0

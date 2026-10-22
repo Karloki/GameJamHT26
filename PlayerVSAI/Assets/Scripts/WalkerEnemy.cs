@@ -16,6 +16,7 @@ public class WalkerEnemy : BaseEnemy
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        
+        if (target != null)transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
     }
 }

@@ -8,12 +8,14 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] private GameObject enemyPrefab;
     public List<GameObject> enemies = new List<GameObject>();
     private Transform player;
+    private GameObject enemy;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Transform>();
-        Instantiate(enemyPrefab);
+        enemy = Instantiate(enemyPrefab);
+        enemy.GetComponent<WalkerEnemy>().enemyManager = this;
     }
 
     // Update is called once per frame
