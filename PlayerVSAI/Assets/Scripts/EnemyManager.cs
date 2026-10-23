@@ -24,6 +24,11 @@ public class EnemyManager : MonoBehaviour
         
     }
 
+    public void addEnemy(GameObject enemy)
+    {
+        enemies.Add(enemy);
+    }
+
     public GameObject FindClosestEnemy() 
     {
         if (!enemies.Any())

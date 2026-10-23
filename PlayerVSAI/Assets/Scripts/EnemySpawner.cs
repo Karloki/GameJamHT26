@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] protected BaseEnemy enemy;
+    [SerializeField] protected GameObject enemy;
+    [SerializeField] protected EnemyManager enemyManager;
     private bool shouldSpawnEnemies;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,7 +29,8 @@ public class EnemySpawner : MonoBehaviour
     {
         while (shouldSpawnEnemies)
         {
-            Instantiate(enemy, transform.position, Quaternion.identity);
+            GameObject newEnemy = Instantiate(enemy, transform.position, Quaternion.identity);
+            enemyManager.addEnemy(newEnemy);
             yield return new WaitForSeconds(1f);
         }
     }

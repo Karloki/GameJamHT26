@@ -210,7 +210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 489842c872b81d24882aa0c8d9fc8d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  enemy: {fileID: 7879072390442002169, guid: 29d9c223ae2959346b118c6ee026612e, type: 3}
+  enemy: {fileID: 754785457466077659, guid: 29d9c223ae2959346b118c6ee026612e, type: 3}
+  enemyManager: {fileID: 7492813237583545167}
 --- !u!4 &268815196
 Transform:
   m_ObjectHideFlags: 0
@@ -3810,6 +3811,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4129375208ae85e4babfa6f13c6a12d8, type: 3}
+--- !u!114 &7492813237583545167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 245634720668296810, guid: 4129375208ae85e4babfa6f13c6a12d8, type: 3}
+  m_PrefabInstance: {fileID: 7492813237583545166}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ad21bb9d191504c8725e4bd019939a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyManager
 --- !u!1001 &8122405153347833374
 PrefabInstance:
   m_ObjectHideFlags: 0
