@@ -36,6 +36,13 @@ public class BaseEnemy : MonoBehaviour
     private void die()
     {
         Instantiate(xppickup, transform.position, Quaternion.identity);
+        if(health <= 0)
+        {
+            Die();
+        }
+    }
+    private void Die()
+    {
         Destroy(gameObject);
     }
 }
