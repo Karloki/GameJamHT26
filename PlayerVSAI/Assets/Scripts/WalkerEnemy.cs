@@ -9,6 +9,8 @@ public class WalkerEnemy : BaseEnemy
 
     private Vector3 previousPosition;
 
+
+
     void Start()
     {
         base.Start();
