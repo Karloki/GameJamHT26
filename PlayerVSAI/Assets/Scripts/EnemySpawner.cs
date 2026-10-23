@@ -10,6 +10,7 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         shouldSpawnEnemies = true;
+        enableSpawningEnemies();
     }
 
     // Update is called once per frame
