@@ -26,7 +26,13 @@ public class EnemyManager : MonoBehaviour
 
     public void addEnemy(GameObject enemy)
     {
+        enemy.GetComponent<WalkerEnemy>().enemyManager = this;
         enemies.Add(enemy);
+    }
+
+    public void removeEnemy(GameObject enemy)
+    {
+        enemies.Remove(enemy);
     }
 
     public GameObject FindClosestEnemy() 

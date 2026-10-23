@@ -14,7 +14,7 @@ public class BaseEnemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected void Start()
     {
-        enemyManager.enemies.Add(this.gameObject);
+        /*enemyManager.enemies.Add(this.gameObject);*/
     }
 
     // Update is called once per frame
@@ -36,6 +36,7 @@ public class BaseEnemy : MonoBehaviour
     private void die()
     {
         Instantiate(xppickup, transform.position, Quaternion.identity);
+        enemyManager.removeEnemy(this.gameObject);
         Destroy(gameObject);
     }
 }
